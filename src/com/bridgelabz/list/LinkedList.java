@@ -5,15 +5,16 @@ public class LinkedList {
     Node tail;
     Node head;
 
-    public void add(int data) {
+    public void append(int data){
         Node newNode = new Node(data);
-        if (head == null) {
+        if(head == null){
             this.node = newNode;
             this.tail = newNode;
             this.head = newNode;
-        } else {
-            tail.next = newNode;
-            tail = newNode;
+        }else{
+            Node temp=head;
+            head=newNode;
+            head.next=temp;
         }
     }
 
