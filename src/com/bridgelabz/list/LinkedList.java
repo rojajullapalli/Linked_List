@@ -29,6 +29,15 @@ public class LinkedList {
 
     }
 
+    public void pop(){
+        if (head == null){
+            System.out.println("Should not be null");
+            return;
+        }
+        System.out.println("\nNodes after deleting first element");
+        head = head.next;
+    }
+
     public void display(){
         Node current = head;
         if(head == null) {

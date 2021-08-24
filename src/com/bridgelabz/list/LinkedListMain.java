@@ -9,5 +9,7 @@ public class LinkedListMain {
         list.insertAfter(list.head, 30);
         System.out.println("Nodes of singly linked list:");
         list.display();
+        list.pop();
+        list.display();
     }
 }
