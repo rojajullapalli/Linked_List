@@ -10,5 +10,8 @@ public class LinkedListMain {
         System.out.println("Nodes of singly linked list:");
         list.display();
         list.search(30);
+        list.insertAfter(list.head.next,40);
+        System.out.println("Nodes after addded 40 to list");
+        list.display();
     }
 }
