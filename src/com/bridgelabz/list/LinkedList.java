@@ -5,7 +5,7 @@ public class LinkedList {
     Node tail;
     Node head;
 
-    public void add(int data){
+    public void append(int data){
         Node newNode = new Node(data);
         if(head == null){
             this.node = newNode;
