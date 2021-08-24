@@ -12,9 +12,9 @@ public class LinkedList {
             this.tail = newNode;
             this.head = newNode;
         }else{
-            Node temp=head;
-            head=newNode;
-            head.next=temp;
+            Node temp = head;
+            head = newNode;
+            head.next = temp;
         }
     }
 
@@ -49,6 +49,25 @@ public class LinkedList {
         }
         temp.next = null;
         last.next = temp.next;
+    }
+
+    public void search(int key){
+        Node current = head;
+        int count = 1;
+        int found = 0;
+        while(current != null){
+            if (current.data == key){
+                found=1;
+                break;
+            }
+            count = count + 1;
+            current = current.next;
+
+        }
+        if (found ==1 )
+            System.out.println("\nNode with value "+key+" is found at position " +count);
+        else
+            System.out.println("Element is not present in the list");
     }
 
 

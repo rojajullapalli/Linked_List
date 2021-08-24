@@ -9,8 +9,6 @@ public class LinkedListMain {
         list.insertAfter(list.head, 30);
         System.out.println("Nodes of singly linked list:");
         list.display();
-        list.popLast();
-        System.out.println("\nNodes after deleting atlast");
-        list.display();
+        list.search(30);
     }
 }
