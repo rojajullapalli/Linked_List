@@ -18,6 +18,17 @@ public class LinkedList {
         }
     }
 
+    public void insertAfter(Node prevNode, int data) {
+        if (prevNode == null) {
+            System.out.println("previous node should not be null");
+            return;
+        }
+        Node newNode = new Node(data);
+        newNode.next = prevNode.next;
+        prevNode.next = newNode;
+
+    }
+
     public void display(){
         Node current = head;
         if(head == null) {
