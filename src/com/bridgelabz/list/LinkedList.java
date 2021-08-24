@@ -1,6 +1,10 @@
 package com.bridgelabz.list;
 
-public class LinkedList {
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class LinkedList<T extends Comparable <T>> {
+    ArrayList<Integer> li = new ArrayList<Integer>();
     Node node;
     Node tail;
     Node head;
@@ -117,5 +121,20 @@ public class LinkedList {
         }
         System.out.println("\nsize of the linkedlist is "+count);
 
+    }
+    public void addToArrayList(){
+        Node temp=head;
+        int i=0;
+        while(temp!=null){
+            li.add(i,temp.data);
+            i++;
+            temp=temp.next;
+        }
+        getsort(li);
+
+    }
+    public void getsort(ArrayList<Integer> list){
+        Collections.sort(list);
+        System.out.println("the elements stored in arraylist"+list);
     }
 }

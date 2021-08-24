@@ -13,10 +13,7 @@ public class LinkedListMain {
         list.insertAfter(list.head.next,40);
         System.out.println("Nodes after addded 40 to list");
         list.display();
-        System.out.println("\nAfter deletion of 40");
-        list.remove(40);
-        //list.size();
-        list.display();
         list.size();
+        list.addToArrayList();
     }
 }
