@@ -12,9 +12,8 @@ public class LinkedList {
             this.tail = newNode;
             this.head = newNode;
         }else{
-            Node temp=head;
-            head=newNode;
-            head.next=temp;
+           tail.next = newNode;
+           tail = newNode;
         }
     }
 
