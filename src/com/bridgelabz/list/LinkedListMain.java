@@ -14,6 +14,9 @@ public class LinkedListMain {
         System.out.println("Nodes after addded 40 to list");
         list.display();
         list.size();
-        list.addToArrayList();
+        list.sortList();
+        System.out.println("after sorting ");
+        list.display();
+
     }
 }
